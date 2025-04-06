@@ -1,0 +1,15 @@
+MINIMUM_HEIGHT : str = "50" 
+
+def main():
+    height = input("How tall are you? or press q to quit: ")
+    if( height != "q"):
+        if height >= MINIMUM_HEIGHT:
+            print("You're tall enough to ride!")
+            main()
+        else:
+            print("You're not tall enough to ride, but maybe next year!")
+            main()
+
+
+if __name__ == '__main__':
+    main()
